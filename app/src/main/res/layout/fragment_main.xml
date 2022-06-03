@@ -2,9 +2,33 @@
 <layout>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:orientation="vertical"
         android:gravity="center"
-        android:orientation="vertical">
+        >
+        <!--
+        В тз, как я понял, часовая стрелка самая длинная, а секундная самая короткая,
+        поэтому у меня так же.
+         -->
+        <com.haberturm.homeworks.views.Clock
+            android:id="@+id/clock_view"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+
+            app:hours_arrow_width="8dp"
+            app:minutes_arrow_width="6dp"
+            app:seconds_arrow_width="3dp"
+
+            app:hours_arrow_length="85dp"
+            app:minutes_arrow_length="60dp"
+            app:seconds_arrow_length="40dp"
+
+            app:hours_arrow_color="@color/black"
+            app:minutes_arrow_color="@color/red"
+            app:seconds_arrow_color="@color/navy"
+
+            app:illegal_arrow_size="true" />
     </LinearLayout>
 </layout>

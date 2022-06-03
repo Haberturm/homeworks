@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Clock">
+
+        <!--Ширина стрелки ограницена <b>layout_width / 6</b>
+        Чтобы сделать стрелку неограниченного размера, укажите атрибут <b>illegal_arrow_size="true"</b>-->
+        <attr name="hours_arrow_width" format="dimension" />
+        <!--Ширина стрелки ограницена <b>layout_width / 6</b>
+        Чтобы сделать стрелку неограниченного размера, укажите атрибут <b>illegal_arrow_size="true"</b>-->
+        <attr name="minutes_arrow_width" format="dimension" />
+        <!--Ширина стрелки ограницена <b>layout_width / 6</b>
+        Чтобы сделать стрелку неограниченного размера, укажите атрибут <b>illegal_arrow_size="true"</b>-->
+        <attr name="seconds_arrow_width" format="dimension" />
+
+        <!--Длина стрелки часов не должна выходить за обод часов.
+            Автоматически будет изменена на <b>layout_width / 2</b>, если выходит за обод.
+            Чтобы сделать стрелку неограниченного размера, укажите атрибут <b>illegal_arrow_size="true"</b>-->
+        <attr name="hours_arrow_length" format="dimension" />
+        <!--Длина стрелки часов не должна выходить за обод часов.
+            Автоматически будет изменена на <b>layout_width / 2</b>, если выходит за обод.
+            Чтобы сделать стрелку неограниченного размера, укажите атрибут <b>illegal_arrow_size="true"</b>-->
+        <attr name="minutes_arrow_length" format="dimension" />
+        <!--Длина стрелки часов не должна выходить за обод часов.
+            Автоматически будет изменена на <b>layout_width / 2</b>, если выходит за обод.
+            Чтобы сделать стрелку неограниченного размера, укажите атрибут <b>illegal_arrow_size="true"</b>-->
+        <attr name="seconds_arrow_length" format="dimension" />
+
+        <attr name="hours_arrow_color" format="color" />
+        <attr name="minutes_arrow_color" format="color" />
+        <attr name="seconds_arrow_color" format="color" />
+
+        <!--Снимает ограничение на размер стрелок-->
+        <attr name="illegal_arrow_size" format="boolean" />
+
+    </declare-styleable>
+</resources>
