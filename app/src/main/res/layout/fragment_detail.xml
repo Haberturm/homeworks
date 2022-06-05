@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.haberturm.homeworks.screens.SharedViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:onClick="@{(view) -> viewModel.onLayoutClickListener()}"
+        android:padding="@dimen/default_padding"
+        >
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/surname_hint"
+            android:onTextChanged="@{viewModel.onSurnameChanged}"
+            android:text="@{viewModel.surname}"
+            tools:text="Ivanov" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_hint"
+            android:onTextChanged="@{viewModel.onNameChanged}"
+            android:text="@{viewModel.name}"
+            tools:text="Ivan" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_number_hint"
+            android:onTextChanged="@{viewModel.onPhoneNumberChanged}"
+            android:text="@{viewModel.phoneNumber}"
+            android:inputType="number"
+            tools:text="+792382138" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClickListener="@{() -> viewModel.onSaveButtonClicked()}"
+            android:text="@string/save_button_text" />
+    </LinearLayout>
+</layout>

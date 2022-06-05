@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_tablet"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/detailFragment2">
+
+    <fragment
+        android:id="@+id/detailFragment2"
+        android:name="com.haberturm.homeworks.screens.detail.DetailFragment"
+        android:label="DetailFragment"
+        tools:layout="@layout/fragment_detail">
+        <argument
+            android:name="selectedContactIndex"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="contacts"
+            app:argType="com.haberturm.homeworks.models.Contact[]"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/xml"
+            app:destination="@id/nav_graph.xml" />
+    </fragment>
+    <include app:graph="@navigation/nav_graph" />
+</navigation>

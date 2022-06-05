@@ -6,6 +6,24 @@
 
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.haberturm.homeworks.screens.MainFragment"
-        android:label="MainFragment" />
+        android:name="com.haberturm.homeworks.screens.main.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.haberturm.homeworks.screens.detail.DetailFragment"
+        android:label="DetailFragment" >
+
+        <action
+            android:id="@+id/action_detailFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/nav_graph.xml"
+            app:popUpToInclusive="true"
+            />
+    </fragment>
 </navigation>
