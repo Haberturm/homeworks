@@ -4,13 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/android/aston_internship/homeworks/homeworks/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
-        <entry key="..\:/android/aston_internship/homeworks/homeworks/app/src/main/res/layout/contact_item.xml" value="0.49794661190965095" />
+        <entry key="..\:/android/aston_internship/homeworks/homeworks/app/src/main/res/layout/contact_item.xml" value="0.12149532710280374" />
         <entry key="..\:/android/aston_internship/homeworks/homeworks/app/src/main/res/layout/fragment_detail.xml" value="0.1" />
         <entry key="..\:/android/aston_internship/homeworks/homeworks/app/src/main/res/layout/fragment_main.xml" value="0.33" />
         <entry key="..\:/android/aston_internship/homeworks/homeworks/app/src/main/res/layout/fragment_main_tablet.xml" value="0.22" />
         <entry key="..\:/android/aston_internship/homeworks/homeworks/app/src/main/res/layout/fragmnet_main_tablet.xml" value="0.36666666666666664" />
         <entry key="..\:/android/aston_internship/homeworks/homeworks/app/src/main/res/layout/person_item.xml" value="0.75" />
         <entry key="..\:/android/aston_internship/homeworks/homeworks/app/src/main/res/layout/tablet_nav_start.xml" value="0.3009833262077811" />
+        <entry key="..\:/android/aston_internship/homeworks/homeworks/app/src/main/res/menu/main.xml" value="0.3009833262077811" />
       </map>
     </option>
   </component>

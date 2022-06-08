@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -9,13 +10,19 @@
     </data>
 
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:onClick="@{(view) -> viewModel.onLayoutClickListener()}"
         android:padding="@dimen/default_padding"
         >
-
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            tools:background="@color/black"
+            android:layout_margin="@dimen/small_padding"
+            app:imageUrl="@{viewModel.photoUrl}" />
         <EditText
             android:id="@+id/edit_name"
             android:layout_width="300dp"

@@ -20,25 +20,42 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/background"
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:padding="@dimen/small_padding"
             >
-            <TextView
-                android:id="@+id/person_surname"
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                tools:background="@color/black"
+                android:layout_margin="@dimen/small_padding"
+                app:imageUrl="@{detail.photo}"
+                />
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="4dp"
-                android:text="@{detail.surname + ' ' + detail.name}"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                tools:text="Ivanov Ivan" />
+                android:orientation="vertical"
+                android:layout_margin="@dimen/small_padding"
+                >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@{detail.phoneNumber}"
-                android:textSize="18sp"
-                tools:text="+79997771337" />
+                <TextView
+                    android:id="@+id/person_surname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="@{detail.surname + ' ' + detail.name}"
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    tools:text="Ivanov Ivan" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{detail.phoneNumber}"
+                    android:textSize="18sp"
+                    tools:text="+79997771337" />
+
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>

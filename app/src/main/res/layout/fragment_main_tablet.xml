@@ -31,7 +31,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                app:listData="@{viewModel.contactsList}"
+                app:listData="@{viewModel.displayedContactsList}"
                 tools:itemCount="4"
                 tools:listitem="@layout/contact_item" />
         </LinearLayout>
